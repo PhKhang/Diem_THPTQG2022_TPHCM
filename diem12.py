@@ -15,10 +15,14 @@ def main():
     session_requests = requests.session()
     
     # Name of output file
-    tenfile = "testingonwindows.csv"
+    tenfile = "diemthi.csv"
     
     # Run through all the ID numbers in the range
-    for x in track(range(2025089, 2025093 ), description="Processing...") : 
+
+    # Nếu dùng ở các tỉnh/thành phố khác, chỉnh lại range theo mã tỉnh/thành phố. tương ứng:
+    # https://github.com/anhdung98/diem_thi_2022
+    # Vd: Hà Nội: range(1000000, 1098000)
+    for x in track(range(2000000, 2085090 ), description="Processing...") : 
         # Add leading 0 of the IDs
         sbd = "0" + str(x)
         
@@ -39,10 +43,7 @@ def main():
         
         table_df = pd.read_html(str(table))[0]
         
-        #data = io.StringIO(sbd)
         pdsbd = pd.DataFrame([sbd])
-        #print(pdsbd)
-        #append_df_to_excel("thu.xlsx", table_df.iloc[[1]], header=None, index=False) #THANH CONG
         
         # Append data to file
         table_df.iloc[[1]].to_csv(tenfile, mode='a', index=False, header=False)
