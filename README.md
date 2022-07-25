@@ -1,5 +1,5 @@
 # Diem_THPTQG2022_TPHCM
-Tra cứu điểm bằng SBD/họ tên của các thí sinh TP.HCM trong file có sẵn, hoặc chỉnh sửa chương trình để tải dữ liệu các vùng khác. 
+Tra cứu điểm bằng SBD/họ tên của các thí sinh TP.HCM trong file có sẵn, hoặc chỉnh sửa chương trình để tự tải dữ liệu xuống từ sở. 
 
 ## Installing scraping script
 
@@ -22,7 +22,7 @@ pip install pandas requests bs4 lxml rich
 
 ### Building
 
-Chỉnh sửa range SBD, tên output file hoặc mã vùng ([Hà Nội: 01, TP.HCM:02,...](https://github.com/anhdung98/diem_thi_2022)) trong `lop12.py`.
+Chỉnh sửa range SBD (optional cho máy chậm, chỉ dò được 2000 thí sinh) và tên output file trong `lop12.py`.
 Chạy:
 ```
 python .\lop12.py
