@@ -1,5 +1,5 @@
 # Diem_THPTQG2022_TPHCM
-Tra cứu điểm bằng SBD/họ tên của các thí sinh TP.HCM trong file có sẵn, hoặc chỉnh sửa chương trình để tự tải dữ liệu xuống từ sở. 
+Tra cứu điểm bằng SBD/họ tên của các thí sinh TP.HCM trong file excel có sẵn, hoặc chỉnh sửa chương trình để tự tải dữ liệu xuống từ sở. 
 
 ## Installing scraping script
 
