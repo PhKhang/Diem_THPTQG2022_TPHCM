@@ -18,12 +18,8 @@ def main():
     tenfile = "diemthi.csv"
     
     # Run through all the ID numbers in the range
-
-    # Nếu dùng ở các tỉnh/thành phố khác, chỉnh lại range theo mã tỉnh/thành phố. tương ứng:
-    # https://github.com/anhdung98/diem_thi_2022
-    # Vd: Hà Nội: range(1000000, 1098000)
     for x in track(range(2000000, 2085090 ), description="Processing...") : 
-        # Add leading 0 of the IDs
+        # Add leading 0 of the ID
         sbd = "0" + str(x)
         
         # Create payload for POST request
@@ -48,7 +44,6 @@ def main():
         # Append data to file
         table_df.iloc[[1]].to_csv(tenfile, mode='a', index=False, header=False)
         pdsbd.to_csv(tenfile, mode='a', index=False, header=False)
-        #append_df_to_excel("thu.xlsx", pdsbd, header=None, index=False)
 
 if __name__ == '__main__':
     main()
