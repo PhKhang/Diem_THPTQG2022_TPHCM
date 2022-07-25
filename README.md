@@ -4,12 +4,12 @@ Tra cứu điểm bằng SBD/họ tên của các thí sinh TP.HCM trong file ex
 ## Installing scraping script
 
 ### Prerequisites
-- Python và chạy được `python -V` từ mọi nơi trong cmd/powershell. Nếu không, dùng https://www.microsoft.com/store/productId/9PJPW5LDXLZ5
+- Python và chạy được `python -V` từ mọi nơi trong cmd/powershell. Nếu không có, dùng https://www.microsoft.com/store/productId/9PJPW5LDXLZ5
 - Pip. Nếu không có, chạy `python get-pip.py`
 
 ### Setting up
 
-Tải xuống file `diem12.py` và vào thư mục có chứa file đó, hoặc dùng:
+Tải xuống file `diem12.py` và vào thư mục có chứa file đó, hoặc dùng lệnh (nếu được):
 ```
 git clone https://github.com/PhKhang/Diem_THPTQG2022_TPHCM
 cd .\Diem_THPTQG2022_TPHCM\
@@ -22,7 +22,7 @@ pip install pandas requests bs4 lxml rich
 
 ### Building
 
-Chỉnh sửa range SBD (optional cho máy chậm, chỉ dò được 2000 thí sinh mỗi lần chạy chương trình như i5 gen 2 từ đời Tống) và tên output file trong `diem12.py`.
+Chỉnh sửa range SBD (optional: cho máy chậm, chỉ dò được 2000 thí sinh như i5 gen 2 đời Tống) và tên output file (optional) trong `diem12.py`.
 Chạy:
 ```
 python .\diem12.py
