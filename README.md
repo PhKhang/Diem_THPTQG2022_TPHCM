@@ -2,7 +2,7 @@
 Tra cứu điểm THPT bằng SBD/họ tên của các thí sinh TP.HCM trong file excel có sẵn, hoặc chỉnh sửa chương trình để tự tải dữ liệu xuống từ sở. 
 
 ## Installing scraping script
-
+https://user-images.githubusercontent.com/84757707/180983265-e30c2b6d-fedc-4b6a-958d-fe1b69739e2c.mp4
 ### Prerequisites
 - Python và chạy được `python -V` từ mọi nơi trong cmd/powershell. Nếu không có, dùng https://www.microsoft.com/store/productId/9PJPW5LDXLZ5
 - Pip. Nếu không có, chạy `python get-pip.py`
