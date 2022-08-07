@@ -9,6 +9,7 @@ from rich.progress import track
 
 #import sys
 
+requests.packages.urllib3.disable_warnings()
 URL = "https://diemthi.hcm.edu.vn/Home/Show"
 
 def main():
@@ -28,7 +29,7 @@ def main():
         }
 
         # Perform login
-        result = session_requests.post(URL, data = payload, headers = dict(referer = URL))
+        result = session_requests.post(URL, data = payload, headers = dict(referer = URL), verify=False)
         soup = BeautifulSoup(result.text, "lxml")
         
         # Check if the ID is correct or not. If not, continue to next one
