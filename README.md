@@ -3,7 +3,7 @@ Tra cứu điểm THPT bằng SBD/họ tên của các thí sinh TP.HCM trong fi
 
 
 ## The challenges
-Although this scraping task was much easier than the last one because webpage doesn't have any security measure, the amount of information from 85k students make my old machine break constantly so I have to implement a way to reduce the risk of losing all entries and the load on my machine each run.
+Although this scraping task was much easier than the last one because the webpage doesn't have any security measure, the amount of information from 85k students make my old machine break constantly so I have to implement a way to reduce the risk of losing all entries and the load on my machine each run.
 
 ## Installing scraping script
 https://user-images.githubusercontent.com/84757707/180983265-e30c2b6d-fedc-4b6a-958d-fe1b69739e2c.mp4
